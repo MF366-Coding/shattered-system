@@ -1,0 +1,32 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+html, body {
+    background-color: black;
+}
+
+body {
+    color: white;
+    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 4px;
+}
+
+.red {
+    color: rgb(255, 71, 71);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: x-large;
+    }
+}
