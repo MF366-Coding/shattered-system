@@ -8,9 +8,31 @@
     </head>
     <body>
         <main>
-            <p class="red">Careful.</p>
+            <p class="red" id="title">Careful.</p>
             <p>One day, you might get lost inside something vague.</p>
             <p>Vague and deep, something that'll consume you, sir.</p>
+            <button id="what-btn">What?</button>
         </main>
+        <script>
+            var btn = document.getElementById('what-btn');
+
+            btn.addEventListener('click', function() {
+                if (btn.textContent.startsWith("Wh")) { // only happens once unless you reload ofc
+                    btn.textContent = "Thank you :)";
+                } else {
+                    btn.textContent = "Now I understand.";
+                }
+
+                var element = document.getElementById('title');
+
+                if (element.textContent.startsWith("Care")) {
+                    element.textContent = "Coming Soon: the shattering of a system";
+                    element.style.fontWeight = "bold";
+                } else {
+                    element.textContent = "Careful.";
+                    element.style.fontWeight = "normal";
+                }
+            });
+        </script>
     </body>
 </html>

@@ -1,6 +1,11 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+::selection {
+    background: white;
+    color: black;
+}
+
 html, body {
     background-color: black;
 }
@@ -21,8 +26,31 @@ main {
     padding: 4px;
 }
 
+button {
+    background-color: rgb(255, 71, 71);
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: inherit;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: rgb(199, 45, 45);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
 .red {
     color: rgb(255, 71, 71);
+}
+
+.red::selection {
+    color: rgb(180, 24, 24);
 }
 
 @media (max-width: 768px) {
